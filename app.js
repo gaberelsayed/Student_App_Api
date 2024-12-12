@@ -4,7 +4,7 @@ const dotenv = require("dotenv");
 const session = require("express-session");
 const MongoStore = require("connect-mongo");
 const path = require("path");
-
+  
 dotenv.config();
 
 // Import the routes
