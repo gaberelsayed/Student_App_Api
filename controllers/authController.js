@@ -5,7 +5,7 @@ const User = require("../models/User");
 const generateToken = (id, role) => {
   return jwt.sign({ id, role }, process.env.JWT_SECRET, { expiresIn: "1h" });
 };
-
+  
 // @desc   Register a new user
 // @route  POST /api/auth/register
 exports.registerUser = async (req, res) => {
